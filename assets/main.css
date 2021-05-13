@@ -1,0 +1,23 @@
+@font-face {
+    font-family:"Avalon Medium";
+    src: url('avalon_medium.ttf') format("truetype");
+    /*src: url("https://wedding-invitations-assets.s3.eu-central-1.amazonaws.com/avalon_medium.ttf") format("truetype");*/
+}
+
+html, body {
+    height: 100%;
+}
+
+.style-field {
+    background-image: url('https://wedding-invitations-assets.s3.eu-central-1.amazonaws.com/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    max-width: 853px;
+    height: 100%;
+}
+
+.style-avalon {
+    font-family: "Avalon Medium";
+}
