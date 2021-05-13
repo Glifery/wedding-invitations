@@ -1,23 +1,43 @@
 @font-face {
     font-family:"Avalon Medium";
+    src: url("https://wedding-invitations-assets.s3.eu-central-1.amazonaws.com/avalon_medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family:"Avalon Medium local";
     src: url('avalon_medium.ttf') format("truetype");
-    /*src: url("https://wedding-invitations-assets.s3.eu-central-1.amazonaws.com/avalon_medium.ttf") format("truetype");*/
+}
+
+@font-face {
+    font-family:"Web Serveroff";
+    src: url("https://wedding-invitations-assets.s3.eu-central-1.amazonaws.com/web_serveroff.ttf") format("truetype");
+}
+
+@font-face {
+    font-family:"Web Serveroff local";
+    src: url('web_serveroff.ttf') format("truetype");
 }
 
 html, body {
     height: 100%;
 }
 
+.style-text-wrapper p {
+    line-height: 1;
+}
 .style-field {
+    background-color: #63b372;
     background-image: url('https://wedding-invitations-assets.s3.eu-central-1.amazonaws.com/background.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     max-width: 853px;
     height: 100%;
 }
 
 .style-avalon {
-    font-family: "Avalon Medium";
+    font-family: "Avalon Medium", "Avalon Medium local";
+}
+.style-serveroff {
+    font-family: "Web Serveroff", "Web Serveroff local";
 }

@@ -25,27 +25,3 @@ module.exports.css = async (event) => {
         body: css,
     };
 };
-
-module.exports.font_avalon = async (event) => {
-    var css = fs.readFileSync('assets/avalon_medium.ttf', 'utf8')
-
-    return {
-        statusCode: 200,
-        headers: {
-            'Content-Type': 'font/ttf',
-        },
-        body: css,
-    };
-};
-
-module.exports.font_serveroff = async (event) => {
-    var css = fs.readFileSync('assets/web_serveroff.ttf', 'utf8')
-
-    return {
-        statusCode: 200,
-        headers: {
-            'Content-Type': 'font/ttf',
-        },
-        body: css,
-    };
-};

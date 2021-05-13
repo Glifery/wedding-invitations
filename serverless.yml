@@ -61,37 +61,18 @@ provider:
 #    - include-me.js
 #    - include-me-dir/**
 
-#custom:
-#  apiGateway:
-#    binaryMediaTypes:
-#      - "image/png"
-#      - "image/jpeg"
-#      - "*/*"
-
 functions:
   hello:
     handler: handler.hello
     events:
       - httpApi:
-          path: /invitation/{code}
+          path: /{code}
           method: get
   css:
     handler: handler.css
     events:
       - httpApi:
           path: /assets/main.css
-          method: get
-  font_avalon:
-    handler: handler.font_avalon
-    events:
-      - httpApi:
-          path: /assets/avalon_medium.ttf
-          method: get
-  font_serveroff:
-    handler: handler.font_serveroff
-    events:
-      - httpApi:
-          path: /assets/web_serveroff.ttf
           method: get
 
 #  html:
