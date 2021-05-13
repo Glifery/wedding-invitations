@@ -18,26 +18,33 @@
     src: url('web_serveroff.ttf') format("truetype");
 }
 
-html, body {
-    height: 100%;
+body {
+    background-color: #f1f8f1;
+    font-size: 38px;
+}
+
+.style-back {
+    position: relative;
+    background-color: #63b372;
+    background-image: url('https://wedding-invitations-assets.s3.eu-central-1.amazonaws.com/background.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 853px;
+    /*height: 100%;*/
+    height: 100vh;
 }
 
 .style-text-wrapper p {
     line-height: 1;
 }
-.style-field {
-    background-color: #63b372;
-    background-image: url('https://wedding-invitations-assets.s3.eu-central-1.amazonaws.com/background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 853px;
-    height: 100%;
-}
 
 .style-avalon {
     font-family: "Avalon Medium", "Avalon Medium local";
+    font-size: calc(2.625rem + 4.5vw);
+    line-height: 1;
 }
 .style-serveroff {
     font-family: "Web Serveroff", "Web Serveroff local";
+    font-size: calc(1.1rem + 1.5vw);
 }
