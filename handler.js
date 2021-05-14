@@ -18,7 +18,7 @@ module.exports.hello = async (event) => {
     };
 
     if (!event.pathParameters.code) {
-        return Promise.reject({
+        return Promise.resolve({
             statusCode: 404,
             headers: {
                 'Content-Type': 'text/html',
